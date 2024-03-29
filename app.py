@@ -3,7 +3,7 @@ import streamlit as st
 import time
 
 st.header('Lanzar una moneda')
-number_of_trials = st.slider('¿Número de intentos?', 1, 1000, 10)
+number_of_trials = st.slider('¿Número de intentos?', 1, 1000, 10, key='number_of_trials_slider')
 start_button = st.button('Ejecutar')
 if start_button:
     st.write(f'Experimento con {number_of_trials} intentos en curso.')
